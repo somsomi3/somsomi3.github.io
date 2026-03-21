@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>웰던 프로젝트</title>
+
+  <!-- 🔥 CSS 연결 (중요) -->
+<link rel="stylesheet" href="../css/project.css">
+<link rel="stylesheet" href="../css/dataflow.css">
+</head>
+
+<body>
+
+<!-- 상단 네비 -->
+<nav class="navbar">
+  <div class="navbar-title">
+    전민경의 실시간 데이터 시스템 포트폴리오
+  </div>
+
+  <div class="navbar-menu">
+    <a href="../../index.html#page1">소개</a>
+    <a href="../../index.html#page2">프로필</a>
+    <a href="../../index.html#page3">기술</a>
+    <a href="../../index.html#page4">프로젝트</a>
+  </div>
+</nav>
+<div class="snap-wrapper">
+<!-- 페이지 1 -->
+<section id="page1" class="snap-page">
+  <div class="page-inner">
+
+    <div class="dataflow-container">
+      <h1 class="dataflow-title">산업 데이터 수집 및 실시간 처리 시스템 프로젝트</h1>
+
+      <div class="dataflow-content">
+
+        <div class="dataflow-left">
+          <div class="dataflow-grid">
+            <div>
+              <h3>프로젝트 개요</h3>
+              <p>다양한 형태의 데이터를 하나의 표준 메시지로 수집하고 안정적으로 저장하는 백엔드 시스템을 구현 시스템입니다.</p>
+            </div>
+            <div>
+              <h3>기술 스택</h3>
+              <p>Spring Boot, TCP/UDP, Websocket, Kafka, OPC-UA Reader, SQL 튜닝</p>
+            </div>
+          </div>
+
+          <div class="dataflow-grid">
+            <div>
+              <h3>내 역할</h3>
+              <p>백엔드 개발 및 실시간 통신 구조 설계</p>
+            </div>
+            <div>
+              <h3>성과</h3>
+              <p>로봇 좌표 실시간 시각화 및 제어 구현</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dataflow-right">
+          <img src="../images/dataflow.png" alt="웰던 이미지">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="page2" class="snap-page"><div class="page-inner">PAGE 2</div></section>
+<section id="page3" class="snap-page"><div class="page-inner">PAGE 3</div></section>
+<section id="page4" class="snap-page"><div class="page-inner">PAGE 4</div></section>
+</div>
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+const wrapper = document.querySelector(".snap-wrapper");
+const dots = document.querySelectorAll(".dot");
+
+/* 1. 스크롤 시 dot 변경 */
+wrapper.addEventListener("scroll", () => {
+  const scrollY = wrapper.scrollTop;
+  const pageHeight = wrapper.clientHeight;
+
+  let index = Math.round(scrollY / pageHeight);
+
+  dots.forEach(dot => dot.classList.remove("active"));
+  if (dots[index]) dots[index].classList.add("active");
+});
+
+/* 2. dot 클릭 시 이동 */
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    wrapper.scrollTo({
+      top: i * wrapper.clientHeight,
+      behavior: "smooth"
+    });
+  });
+});
+</script>
+</body>
+</html>

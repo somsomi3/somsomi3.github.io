@@ -9,10 +9,18 @@
 <body>
 
 <nav class="navbar">
-  <a href="#page1">프로필</a>
-  <a href="#page2">상세</a>
-  <a href="#page3">기술</a>
-  <a href="#page4">프로젝트</a>
+  <!-- 왼쪽 -->
+  <div class="navbar-title">
+    전민경의 실시간 데이터 시스템 포트폴리오
+  </div>
+
+  <!-- 오른쪽 -->
+  <div class="navbar-menu">
+    <a href="#page1">소개</a>
+    <a href="#page2">프로필</a>
+    <a href="#page3">기술</a>
+    <a href="#page4">프로젝트</a>
+  </div>
 </nav>
 
 <section id="page1" class="page first-page">
@@ -20,7 +28,7 @@
 
     <!-- 왼쪽 사진 -->
     <div class="profile-left">
-      <img src="profile.jpg" alt="프로필">
+      <img src="images/프로필사진.jpg" alt="프로필">
     </div>
 
     <!-- 오른쪽 내용 -->
@@ -125,12 +133,11 @@ function goDetailSlide(index) {
             <img src="icons/python.png" alt="python">
             <h3>Python</h3>
           </div>
-          <p>FastAPI, Django 기반 프로젝트 및 AI 모델 개발 경험</p>
         </div>
 
         <div class="skill-item">
           <h3>Java</h3>
-          <p>Spring Boot 기반 서버 개발 및 인증/통신 기능 구현</p>
+
         </div>
       </div>
 
@@ -140,22 +147,18 @@ function goDetailSlide(index) {
 
         <div class="skill-item">
           <h3>Spring Boot</h3>
-          <p>REST API 설계 및 JWT 기반 인증 시스템 구현</p>
         </div>
 
         <div class="skill-item">
           <h3>WebSocket / WebRTC</h3>
-          <p>실시간 통신 및 영상 스트리밍 기능 구현</p>
         </div>
 
         <div class="skill-item">
           <h3>Redis</h3>
-          <p>실시간 좌표 데이터 캐싱 및 WebSocket 전송</p>
         </div>
 
         <div class="skill-item">
           <h3>MySQL / PostgreSQL</h3>
-          <p>데이터 저장, 조회, 수정 및 성능 고려한 DB 설계</p>
         </div>
       </div>
 
@@ -165,17 +168,14 @@ function goDetailSlide(index) {
 
         <div class="skill-item">
           <h3>Docker / Jenkins</h3>
-          <p>백엔드 서버 컨테이너화 및 CI/CD 배포 경험</p>
         </div>
 
         <div class="skill-item">
           <h3>PyTorch</h3>
-          <p>AI 모델 학습 및 추론 파이프라인 구현</p>
         </div>
 
         <div class="skill-item">
           <h3>Notion / JIRA</h3>
-          <p>협업 문서화 및 이슈 관리 경험</p>
         </div>
       </div>
 
@@ -220,30 +220,49 @@ function goSkillSlide(index) {
 
 
         <a href="projects/welldone.html" class="project-card">
-            <div class="card-image"></div>
-            <h3>웰던</h3>
-            <p>설명</p>
-            <p>자율주행 기반 실시간 재고관리 시스템</p>
+            <div class="card-image"
+                style="background-image: url('images/welldone.png');">
+            </div>
+
+            <div class="card-content">
+              <h3>웰던</h3>
+              <p>자율주행 기반 실시간 재고관리 시스템</p>
+            </div>
         </a>
 
 
-        <div class="project-card">
-        <div class="card-image"></div>
-        <h2>달디단</h2>
-        <p>AI 기반 과일 당도 예측 서비스</p>
-        </div>
+        <a href="projects/daldidan.html" class="project-card">
+            <div class="card-image"
+                style="background-image: url('images/welldone.png');">
+            </div>
 
-        <div class="project-card">
-        <div class="card-image"></div>
-        <h2>마래바</h2>
-        <p>청각장애인을 위한 언어 학습 서비스</p>
-        </div>
+            <div class="card-content">
+              <h3>달디단</h3>
+              <p>AI기반 과일 당도 예측 서비스</p>
+            </div>
+        </a>
 
-        <div class="project-card">
-        <div class="card-image"></div>
-        <h2>추가 프로젝트</h2>
-        <p>설명 작성</p>
-        </div>
+        <a href="projects/maraeba.html" class="project-card">
+            <div class="card-image"
+                style="background-image: url('images/welldone.png');">
+            </div>
+
+            <div class="card-content">
+              <h3>마래바</h3>
+              <p>음성AI와 WebRTC기반 청각장애 아동 언어 지도 서비스</p>
+            </div>
+        </a>
+
+        <a href="projects/dataflow.html" class="project-card">
+            <div class="card-image"
+                style="background-image: url('images/welldone.png');">
+            </div>
+
+            <div class="card-content">
+              <h3>산업 데이터 처리</h3>
+              <p>통신 기술 및 Kafka기반 실시간 데이터 서비스</p>
+            </div>
+        </a>
 
       </div>
     </div>

@@ -2,80 +2,316 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>웰던 프로젝트</title>
+  <title>웰던(Well-Done) 프로젝트</title>
 
   <!-- 🔥 CSS 연결 (중요) -->
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/project.css">
+<link rel="stylesheet" href="../css/welldone.css">
 </head>
 
 <body>
 
 <!-- 상단 네비 -->
 <nav class="navbar">
-  <a href="index.html#page1">프로필</a>
-  <a href="index.html#page2">상세</a>
-  <a href="index.html#page3">기술</a>
-  <a href="index.html#page4">프로젝트</a>
+  <div class="navbar-title">
+    전민경의 실시간 데이터 시스템 포트폴리오
+  </div>
+
+  <div class="navbar-menu">
+    <a href="../../index.html#page1">소개</a>
+    <a href="../../index.html#page2">프로필</a>
+    <a href="../../index.html#page3">기술</a>
+    <a href="../../index.html#page4">프로젝트</a>
+  </div>
 </nav>
+<div class="snap-wrapper">
 
-<section class="page">
 
-  <div class="welldone-container">
+<!-- 페이지 1 -->
+<section id="page1" class="snap-page">
+  <div class="page-inner">
 
-    <!-- 제목 -->
-    <h1 class="welldone-title">웰던 프로젝트</h1>
+    <div class="maraeba-container">
+      <h1 class="maraeba-title">
+        실시간 재고 관리 및 물류 자동화 서비스, 웰던
+      </h1>
 
-    <!-- 본문 -->
-    <div class="welldone-content">
+      <!-- 🔥 핵심 변경 -->
+      <div class="maraeba-layout">
 
-      <!-- 왼쪽 -->
-      <div class="welldone-left">
+        <!-- 왼쪽 -->
+        <div class="left-box">
+    <div class="info-block">
+    <span class="info-label">프로젝트개요</span>
+      <p>자율주행 로봇과 웹 서비스를 연동한 <br>
+        실시간 재고 관리 및 물류 자동화 서비스
+      </p>
 
-        <div class="welldone-grid">
-          <div>
-            <h3>프로젝트 개요</h3>
-            <p>
-              자율주행 로봇과 웹 서비스를 연동한
-              실시간 재고 관리 시스템입니다.
-            </p>
-          </div>
+    </div>
 
-          <div>
-            <h3>기술 스택</h3>
-            <p>
-              Spring Boot, WebSocket, Redis, ROS
-            </p>
-          </div>
+  <div class="info-row">
+    <span class="info-label">기간</span>
+    <span class="info-value">2025.03.04 ~ 2025.04.11(6주)</span>
+  </div>
+
+  <div class="info-row">
+    <span class="info-label">인원</span>
+    <span class="info-value">6인(백엔드 2명, 시뮬레이터2명,<br>
+       인프라 1명, 프론트엔드 1명)</span>
+  </div>
+
+  <div class="info-row">
+    <span class="info-label">역할</span>
+    <span class="info-value">Backend(Spring Security, WebSocket, Redis)</span>
+  </div>
+
+  <div class="info-row">
+    <span class="info-label">기여도</span>
+    <span class="info-value">30%</span>
+  </div>
+
+          <div class="info-block">
+              <span class="info-label">기술스택</span>
+                 <div class="tech-stack">
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">ROS2</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">WebSocket</span>
+                  <span class="tech-tag">Simulator</span>
+                </div>
+              </div>
+
+
+          <p>
+            <span class="info-label">GitHub</span>
+            <a href="https://github.com/somsomi3/Well-Done" target="_blank">
+              웰던 프로젝트
+            </a>
+          </p>
+
         </div>
 
-        <div class="welldone-grid">
-          <div>
-            <h3>내 역할</h3>
-            <p>
-              백엔드 개발 및 실시간 통신 구조 설계
-            </p>
-          </div>
+        <!-- 가운데 -->
+        <div class="center-box">
+              <div class="info-block">
+                <span class="info-label">구현 기능</span>
+                <div class="feature-block">
 
-          <div>
-            <h3>성과</h3>
-            <p>
-              로봇 좌표 실시간 시각화 및 제어 구현
-            </p>
-          </div>
+                  <div class="feature-item">
+                    <div class="feature-title">시뮬레이터 로봇의 자율주행 구현</div>
+                    <div class="feature-desc">
+                      ROS2 기반 자율주행 및 SLAM<br> 
+                      YOLO 기반 물품 인식 및 위치 파악
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-title">통신기반 데이터 파이프라인 구축</div>
+                    <div class="feature-desc">
+                      WebSocket, Ros 브릿지, Redis를 사용하여<br>
+                      시스템의 유기적 연결 구현
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-title">실시간 재고 관리 및 로봇 동선 파악</div>
+                    <div class="feature-desc">
+                      웹 화면에서 창고 구조와 로봇 경로, 재고 상태를 시각화
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="info-block">
+                <span class="info-label">프로젝트 성과</span><br>
+                <span class="info-value">
+                실시간 통신 및 데이터 파이프라인 구축</span>
+              
+              </div>
+            </div>
+
+        <!-- 오른쪽 -->
+        <!-- 오른쪽 -->
+        <div class="right-box">
+            <div>
+                <img src="../images/웰던1page_1.png" alt="">
+            </div>
+
+            <div>
+                <img src="../images/웰던1page_2.png" alt="">
+            </div>
         </div>
 
-      </div>
-
-      <!-- 오른쪽 -->
-      <div class="welldone-right">
-        <img src="images/welldone.png" alt="웰던 이미지">
       </div>
 
     </div>
 
   </div>
+</section>
+
+
+
+<section id="page2" class="snap-page">
+  <div class="page-inner">
+
+    <h2 class="sub-title">담당 구현 상세</h2>
+    <div class="two-column">
+
+      <!-- 왼쪽 -->
+      <div>
+        <h2>담당 구현</h2>
+        <ul class="feature-list">
+
+            <li>
+              <b>[실시간 통신 & 데이터 처리]</b>
+              <ul>
+                <li>WebSocket 시그널링 서버 구축</li>
+                <li>로봇 위치 및 재고 데이터를 처리 및 저장<br>
+                   + Redis에 저장하여 실시간 경로, 지도정보 제공</li>
+              </ul>
+            </li>
+
+            <li>
+              <b>[보안]</b>
+              <ul>
+                <li>Spring Security 구현</li>
+              </ul>
+            </li>
+
+            <li>
+              <b>[서비스]</b>
+              <ul>
+                <li>로봇 이동경로 출력 및 재고 관리 기능 구현</li>
+                <li>사용자(매장관리자) 유저/인증 기능 구현</li>
+              </ul>
+            </li>
+
+          </ul>
+        </ul>
+
+        <h2>기술 선정 이유</h2>
+        <p>
+          Redis: 시뮬레이터 내의 실시간 로봇의 경로 표시.
+        <br>
+          WebSocket: 통신 안정성 및 WebRTC활용 가능성 고려
+
+        </p>
+
+        <h2>프로젝트 성과</h2>
+        <p>
+          - ROS 브릿지를 통해 넘어온 정보를 백엔드에 저장<br>
+          - Redis를 사용하여, 로봇의 실시간 좌표를 출력<br>
+          - WebSocket을 활용하여  프론트엔드에 로봇 좌표와 로봇이 바라보는 화면 출력
+        </p>
+      </div>
+
+      <!-- 오른쪽 -->
+        <div class="right-box">
+            <img src="../images/웰던2page_1.gif" alt="">
+            <img src="../images/웰던2page_2.gif" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="page3" class="snap-page">
+  <div class="page-inner">
+
+      <div class="title-box">
+    <h2 class="sub-title">트러블 슈팅</h2>
+  </div>
+
+<div class="two-column2">
+    <!-- 왼쪽 -->
+    <div>
+      <img src="../images/웰던3page.png" alt="트러블슈팅1">
+    </div>
+
+    <!-- 오른쪽 -->
+    <div>
+      <h2>#1 실시간 데이터 처리성능 개선</h2>
+
+      <p>
+        <b>[문제]</b><br>
+          로봇의 실시간 위치 데이터를 MySQL에 저장하면서<br>
+          조회 지연이 발생하여 실시간 화면 반영이 어려움
+      </p>
+
+      <p>
+        <b>[해결]</b><br>
+          Redis를 캐시 및 실시간 저장소로 도입하여<br>
+          최신 좌표 데이터를 메모리 기반으로 관리하도록 구조 개선
+      </p>
+
+      <p>
+        <b>[결과]</b><br>
+          실시간 위치 데이터 조회 속도를 개선하고<br>
+          화면 반영 지연을 줄여 시스템 응답성 향상
+
+      </p>
+
+            <h2>#2 ROS 데이터 가공</h2>
+
+      <p>
+        <b>[문제]</b><br>
+          ROS에서 전달되는 오도메트리 및 맵 데이터가<br>
+          중첩된 구조로 제공되어 프론트엔드에서 직접 활용하기 어려움
+      </p>
+
+      <p>
+        <b>[해결]</b><br>
+        Backend에서 오도메트리 데이터의 x, y 좌표를 추출하여 단순화<br>
+        맵 데이터를 2차원 grid 형태로 변환<br>
+        필요한 데이터만 추출하여 WebSocket을 통해 전달하도록 구조 개선
+      </p>
+
+      <p>
+        <b>[결과]</b><br>
+        데이터 처리 책임을 Backend로 분리하여 시스템 구조 단순화 <br>
+        실시간 데이터 처리 및 시각화 성능 향상<br>
+      </p>
+    </div>
+    
+  </div>
+
 
 </section>
 
+</div>
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+const wrapper = document.querySelector(".snap-wrapper");
+const dots = document.querySelectorAll(".dot");
+
+/* 1. 스크롤 시 dot 변경 */
+wrapper.addEventListener("scroll", () => {
+  const scrollY = wrapper.scrollTop;
+  const pageHeight = wrapper.clientHeight;
+
+  let index = Math.round(scrollY / pageHeight);
+
+  dots.forEach(dot => dot.classList.remove("active"));
+  if (dots[index]) dots[index].classList.add("active");
+});
+
+/* 2. dot 클릭 시 이동 */
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    wrapper.scrollTo({
+      top: i * wrapper.clientHeight,
+      behavior: "smooth"
+    });
+  });
+});
+</script>
 </body>
 </html>

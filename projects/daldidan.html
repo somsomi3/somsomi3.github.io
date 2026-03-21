@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>달디단 프로젝트</title>
+
+  <!-- 🔥 CSS 연결 (중요) -->
+<link rel="stylesheet" href="../css/project.css">
+<link rel="stylesheet" href="../css/daldidan.css">
+</head>
+
+<body>
+
+<!-- 상단 네비 -->
+<nav class="navbar">
+  <div class="navbar-title">
+    전민경의 실시간 데이터 시스템 포트폴리오
+  </div>
+
+  <div class="navbar-menu">
+    <a href="../../index.html#page1">소개</a>
+    <a href="../../index.html#page2">프로필</a>
+    <a href="../../index.html#page3">기술</a>
+    <a href="../../index.html#page4">프로젝트</a>
+  </div>
+</nav>
+<div class="snap-wrapper">
+
+
+<!-- 페이지 1 -->
+<section id="page1" class="snap-page">
+  <div class="page-inner">
+
+    <div class="maraeba-container">
+        <h1 class="maraeba-title">
+        VISION AI 기반 사과 당도 예측 서비스, 달디단<br>
+        </h1>
+
+        <!-- 핵심 변경 -->
+        <div class="maraeba-layout">
+
+    <!-- 왼쪽 -->
+    <div class="left-box">
+        <div class="info-block">
+        <span class="info-label">프로젝트개요</span>
+    <p>YOLO기반 객체 탐지와 CNN기반 회귀모델을 통해 사과의 당도를 예측.</p>
+    </div>
+
+    <div class="info-row">
+        <span class="info-label">기간</span>
+        <span class="info-value">2025.04.14 ~ 2025.05.22 (6주)</span>
+    </div>
+
+    <div class="info-row">
+        <span class="info-label">인원</span>
+        <span class="info-value">6인(백엔드 2명, 프론트엔드 4명)</span>
+    </div>
+
+    <div class="info-row">
+        <span class="info-label">역할</span>
+        <span class="info-value">Backend(당도예측 AI 모델 개발)
+        Infra(백엔드 배포)
+        </span>
+    </div>
+
+    <div class="info-row">
+        <span class="info-label">기여도</span>
+        <span class="info-value">35%</span>
+    </div>
+
+    <div class="info-block">
+        <span class="info-label">기술스택</span>
+            <div class="tech-stack">
+            <span class="tech-tag">Pytorch</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">YOLOv8</span>
+            <span class="tech-tag">Expo</span>
+            <span class="tech-tag">EfficientNet</span>
+            <span class="tech-tag">React Native</span>
+            </div>
+    </div>
+
+
+    <p>
+    <span class="info-label">GitHub</span>
+        <a href="https://github.com/somsomi3/Daldidan" target="_blank">
+            바로가기
+        </a>
+    </p>
+
+        </div>
+        <!-- 가운데 -->
+        <div class="center-box">
+              <div class="info-block">
+                <span class="info-label">구현 기능</span>
+                <div class="feature-block">
+
+                  <div class="feature-item">
+                    <div class="feature-title">사과 인식</div>
+                    <div class="feature-desc">
+                      EfficientNet기반 프론트엔드에서 객체인식<br>
+                      YOLOv8기반 백엔드에서 객체인식
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-title">사과 당도 예측</div>
+                    <div class="feature-desc">
+                      딥러닝 기반 사과 당도(Brix)예측
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-title">예측 결과를 사용자 친화적으로 시각화하여 제공</div>
+                    <div class="feature-desc">
+                      Expo 앱 배포
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="info-block">
+                <span class="info-label">프로젝트 성과</span><br>
+                <span class="info-value">실시간 사과 당도 예측 AI모델 개발 및 최적화</span>
+              
+              </div>
+            </div>
+
+        <!-- 오른쪽 -->
+
+        <div class="right-box">
+            <div>
+                <img src="../images/달디단1page.png" alt="">
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="page2" class="snap-page">
+  <div class="page-inner">
+
+    <h2 class="sub-title">담당 구현 상세</h2>
+    <div class="two-column">
+
+      <!-- 왼쪽 -->
+      <div>
+        <h2>담당 구현</h2>
+        <ul class="feature-list">
+
+            <li>
+              <b>[AI 모델 개발]</b>
+              <ul>
+                <li>VISION AI기반 CNN + 수작업 특징 기반 Fusion 모델 구현</li>
+                <li>Fine-tuning 및 Feature 확장 실험</li>
+                <li>초기 당도 예측 모델 개발(Linear Regression)</li>
+              </ul>
+            </li>
+
+            <li>
+              <b>[인프라]</b>
+              <ul>
+                <li>백엔드 배포</li>
+                <li>Jenkins와 Docker를 사용하여 GitLab파이프라인 구축</li>
+                <li>AWS EC2서버에서 배포 환경을 운영</li>
+              </ul>
+            </li>
+
+          </ul>
+        </ul>
+
+        <h2>기술 선정 이유</h2>
+        <p>
+          CNN + 수작업 특징 기반 Fusion모델 선정<br>
+        : 특징 만으로 당도 예측 모델의 신뢰성 부족으로,<br>
+        CNN모델을 추가하여 구현함.
+
+        </p>
+
+        <h2>프로젝트 성과</h2>
+        <p>
+          - CNN회귀모델을 활용한 당도예측 모델 개발<br>
+          - 푸른 사과 예외로직 구현<br>
+          - 실측 테스트를 통해 신뢰도 확보
+        </p>
+      </div>
+
+      <!-- 오른쪽 -->
+        <div class="right-box2">
+            <img src="../images/달디단2page_1.gif" alt="">
+            <img src="../images/달디단2page_2.gif" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="page3" class="snap-page">
+  <div class="page-inner">
+
+      <div class="title-box">
+    <h2 class="sub-title">트러블 슈팅</h2>
+  </div>
+
+<div class="two-column2">
+    <!-- 왼쪽 -->
+    <div>
+      <img src="../images/달디단page3.jpg" alt="트러블슈팅1">
+    </div>
+
+    <!-- 오른쪽 -->
+    <div>
+      <h2>#1 모델성능 개선</h2>
+
+      <p>
+        <b>[문제]</b><br>
+        수치 기반 feature 단독 사용 시<br>
+        당도에 대한 설명력이 제한적(상관계수: 0.18)
+      </p>
+
+      <p>
+        <b>[해결]</b><br>
+          EfficientNet-B0 기반 CNN에서 이미지로부터 고차원 특징을 추출하고,
+          기존 수치 기반 feature와 결합하여 총 1286차원의 feature 벡터를 구성.<br>
+
+          이를 입력으로 하는 PyTorch 기반 MLP 회귀 모델을 설계하여 End-to-End 방식으로 학습
+      </p>
+
+      <p>
+        <b>[결과]</b><br>
+        MAE가 1.15로 감소, 상관계수(R²)가 0.45로 개선되어<br>
+         당도 예측 성능 향상<br>
+
+      </p>
+
+            <h2>#2 성능 최적화</h2>
+
+      <p>
+        <b>[문제]</b><br>
+          이미지 기반 당도 예측 시 추론 시간이 약 7초로 길어
+          실시간 서비스 적용이 어려움
+      </p>
+
+      <p>
+        <b>[해결]</b><br>
+        입력 이미지의 ROI를 64×64 크기로 축소하는 전처리 구조를 적용하고,<br>
+        FastAPI 기반 백엔드 구조를 도입하여 모델 추론 파이프라인을 최적화
+      </p>
+
+      <p>
+        <b>[결과]</b><br>
+        응답 시간을 약 7초 → 1초로 단축하여<br>
+        실시간 서비스 적용이 가능한 수준으로 개선
+      </p>
+    </div>
+    
+  </div>
+
+
+</section>
+
+
+</div>
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+const wrapper = document.querySelector(".snap-wrapper");
+const dots = document.querySelectorAll(".dot");
+
+/* 🔥 1. 스크롤 시 dot 변경 */
+wrapper.addEventListener("scroll", () => {
+  const scrollY = wrapper.scrollTop;
+  const pageHeight = wrapper.clientHeight;
+
+  let index = Math.round(scrollY / pageHeight);
+
+  dots.forEach(dot => dot.classList.remove("active"));
+  if (dots[index]) dots[index].classList.add("active");
+});
+
+/* 🔥 2. dot 클릭 시 이동 */
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    wrapper.scrollTo({
+      top: i * wrapper.clientHeight,
+      behavior: "smooth"
+    });
+  });
+});
+</script>
+</body>
+</html>

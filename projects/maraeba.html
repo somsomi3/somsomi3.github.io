@@ -2,75 +2,340 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>마래바</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>마래바 프로젝트</title>
+
+  <!-- 🔥 CSS 연결 (중요) -->
+<link rel="stylesheet" href="../css/project.css">
+<link rel="stylesheet" href="../css/maraeba.css">
 </head>
+
 <body>
 
-<header class="navbar">
-  <h1>전민경</h1>
-  <nav>
-    <a href="../index.html">홈</a>
-    <a href="../pages/profile.html">프로필</a>
-    <a href="../pages/skills.html">기술스택</a>
-    <a href="projects.html">프로젝트</a>
-  </nav>
-</header>
+<!-- 상단 네비 -->
+<nav class="navbar">
+  <div class="navbar-title">
+    전민경의 실시간 데이터 시스템 포트폴리오
+  </div>
 
-<section class="detail-page">
+  <div class="navbar-menu">
+    <a href="../../index.html#page1">소개</a>
+    <a href="../../index.html#page2">프로필</a>
+    <a href="../../index.html#page3">기술</a>
+    <a href="../../index.html#page4">프로젝트</a>
+  </div>
+</nav>
+<div class="snap-wrapper">
 
-  <!-- 제목 -->
-  <h1 class="detail-title">마래바 (Maraeba)</h1>
-  <hr>
 
-  <div class="detail-container">
+<!-- 페이지 1 -->
+<section id="page1" class="snap-page">
+  <div class="page-inner">
 
-    <!-- 왼쪽 텍스트 -->
-    <div class="detail-left">
+    <div class="maraeba-container">
+      <h1 class="maraeba-title">
+        음성 AI + WebRTC 기반<br>
+        청각장애아동 언어지도 서비스, 마래바
+      </h1>
 
-      <p><b>주제</b><br>
-      음성 AI와 WebRTC 기반 청각 장애 아동 언어지도 서비스</p>
+      <!-- 핵심 변경 -->
+      <div class="maraeba-layout">
 
-      <p><b>개발 기간</b><br>
-      2025.01.13 ~ 2025.02.21 (6주)</p>
-
-      <p><b>개발 인원</b><br>
-      백엔드 4명, 프론트엔드 2명</p>
-
-      <p><b>기술스택</b><br>
-      Spring Boot, Flask, WebSocket</p>
-
-      <p><b>담당 역할</b><br>
-      Backend (WebSocket, WebRTC)</p>
-
-      <p><b>구현 기능</b></p>
-      <ul>
-        <li>발음 연습: STT 기반 음성 분석</li>
-        <li>단어 게임</li>
-        <li>AI 대화 기능</li>
-        <li>WebRTC 기반 실시간 영상/게임</li>
-      </ul>
-
+        <!-- 왼쪽 -->
+        <div class="left-box">
+    <div class="info-block">
+    <span class="info-label">프로젝트개요</span>
       <p>
-        <b>GitHub :</b>
-        <a href="https://github.com/somsomi3/Maraeba" target="_blank">
-          바로가기
-        </a>
-      </p>
+                음성 AI와 WebRTC 기반으로<br>
+                청각장애 아동의 발음 및 언어 학습을 지원하는 서비스
+              </p>
 
     </div>
 
-    <!-- 오른쪽 이미지 -->
-    <div class="detail-right">
+  <div class="info-row">
+    <span class="info-label">기간</span>
+    <span class="info-value">2025.01.13 ~ 2025.02.21(6주) </span>
+  </div>
 
-      <div class="detail-img"></div>
-      <div class="detail-img"></div>
+  <div class="info-row">
+    <span class="info-label">인원</span>
+    <span class="info-value">6인 프로젝트</span>
+  </div>
+
+  <div class="info-row">
+    <span class="info-label">역할</span>
+    <span class="info-value">Backend(WebSocket / WebRTC)</span>
+  </div>
+
+  <div class="info-row">
+    <span class="info-label">기여도</span>
+    <span class="info-value">30%</span>
+  </div>
+
+          <div class="info-block">
+              <span class="info-label">기술스택</span>
+                 <div class="tech-stack">
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">WebSocket</span>
+                </div>
+
+              </div>
+
+
+          <p>
+    <span class="info-label">GitHub</span>
+            <a href="https://github.com/somsomi3/Maraeba" target="_blank">
+              바로가기
+            </a>
+          </p>
+
+        </div>
+
+        <!-- 가운데 -->
+        <div class="center-box">
+
+
+              <div class="info-block">
+                <span class="info-label">구현 기능</span>
+                <div class="feature-block">
+
+                  <div class="feature-item">
+                    <div class="feature-title">STT 기반 발음/단어 연습</div>
+                    <div class="feature-desc">
+                      Sherpa-ONNX Zipformer 기반 한글 STT 모델을 활용하여 
+                      발음을 분석하고 학습하는 기능 구현
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-title">AI 대화 기능</div>
+                    <div class="feature-desc">
+                      ChatGPT를 활용하여 사용자와 자연스러운 대화 기능 구현
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-title">WebRTC + WebSocket 실시간 화상 통신</div>
+                    <div class="feature-desc">
+                      실시간 통신을 기반으로 발음을 활용한 
+                      1:1 단어 유추 게임 기능 구현
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="info-block">
+                <span class="info-label">프로젝트 성과</span><br>
+                <span class="info-value">우수상( SSAFY 공통프로젝트 부울경 1반 1등)</span>
+              
+              </div>
+            </div>
+
+        <!-- 오른쪽 -->
+        <!-- 오른쪽 -->
+        <div class="right-box">
+          <video autoplay muted loop playsinline>
+            <source src="../images/마래바1page_1.mp4" type="video/mp4">
+          </video>
+
+          <video autoplay muted loop playsinline>
+            <source src="../images/마래바1page_2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
 
     </div>
 
   </div>
-
 </section>
 
+
+
+<section id="page2" class="snap-page">
+  <div class="page-inner">
+
+    <h2 class="sub-title">담당 구현 상세</h2>
+    <div class="two-column">
+
+      <!-- 왼쪽 -->
+      <div>
+        <h2>담당 구현</h2>
+        <ul class="feature-list">
+
+            <li>
+              <b>[실시간 통신]</b>
+              <ul>
+                <li>WebSocket 시그널링 서버 구축</li>
+                <li>WebRTC 연결 처리</li>
+              </ul>
+            </li>
+
+            <li>
+              <b>[보안]</b>
+              <ul>
+                <li>WebSocket 연결 시 JWT 기반 사용자 인증</li>
+              </ul>
+            </li>
+
+            <li>
+              <b>[서비스]</b>
+              <ul>
+                <li>WebRTC 화상 기반 단어 학습 게임 구현</li>
+                <li>실시간 영상/음성 처리 UI 구성</li>
+              </ul>
+            </li>
+
+          </ul>
+        </ul>
+
+        <h2>기술 선정 이유</h2>
+        <p>
+          WebSocket을 활용하여 직접 시그널링 서버를 구현함으로써<br>
+          WebRTC 연결 흐름을 제어하고,<br>
+          Spring Boot 인증 시스템과 통합하여 사용자 식별을 수행.<br><br>
+
+          Polling 방식 대비 낮은 지연으로<br>
+          실시간 통신 환경에 적합한 구조를 설계.
+        </p>
+
+        <h2>프로젝트 성과</h2>
+        <p>
+          - SSAFY 공통 프로젝트 우수상 (부울경 1반 1등)<br>
+          - Sherpa-ONNX Zipformer 기반 STT 모델 적용<br>
+          - WebRTC + WebSocket 기반 실시간 학습 게임 구현
+        </p>
+      </div>
+
+      <!-- 오른쪽 -->
+        <div class="right-box2">
+          <video autoplay muted loop playsinline>
+            <source src="../images/마래바2page.mp4" type="video/mp4">
+          </video>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="page3" class="snap-page">
+  <div class="page-inner">
+
+      <div class="title-box">
+    <h2 class="sub-title">트러블 슈팅</h2>
+    <h3 class="sub-number">#1 인터셉터</h3>
+  </div>
+
+<div class="two-column2">
+    <!-- 왼쪽 -->
+    <div>
+      <img src="../images/마래바3page.png" alt="트러블슈팅1">
+    </div>
+
+    <!-- 오른쪽 -->
+    <div>
+      <h2>관련: WebSocket 인증 문제</h2>
+
+      <p>
+        <b>[문제]</b><br>
+        WebSocket 연결 시 Spring Security 필터가 적용되지 않아,<br>
+        JWT 로그인만으로는 연결 사용자의 인증 및 식별이 불가능
+      </p>
+
+      <p>
+        <b>[해결]</b><br>
+        HandshakeInterceptor를 적용하여<br>
+        유효한 사용자만 WebSocket 연결을 허용하도록 구현
+      </p>
+
+      <p>
+        <b>[결과]</b><br>
+        인증된 사용자만 WebSocket 연결이 가능하도록 개선하여<br>
+        실시간 통신 환경에서 사용자 식별 및 보안성 확보
+      </p>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+<section id="page4" class="snap-page">
+  <div class="page-inner">
+  <div class="title-box">
+    <h2 class="sub-title">트러블 슈팅</h2>
+    <h3 class="sub-number">#2 TURN 서버</h3>
+  </div>
+
+<div class="two-column2">
+    <!-- 왼쪽 -->
+    <div>
+      <img src="../images/fix마래바4page.png" alt="트러블슈팅2">
+    </div>
+
+    <!-- 오른쪽 -->
+    <div>
+      <h2>관련: WebRTC 연결 문제</h2>
+
+      <p>
+        <b>[문제]</b><br>
+        WebRTC P2P 연결이 NAT 및 방화벽 환경에서 실패하여<br>
+        일부 사용자 간 영상 및 음성 연결이 불가능
+      </p>
+
+      <p>
+        <b>[해결]</b><br>
+        Coturn 기반 TURN 서버를 구축하여<br>
+        중계 방식의 연결 구조를 적용
+      </p>
+
+      <p>
+        <b>[결과]</b><br>
+        다양한 네트워크 환경에서도<br>
+        안정적인 WebRTC 연결이 가능하도록 개선
+      </p>
+
+
+    </div>
+  </div>
+  </div>
+</section>
+</div>
+<div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+const wrapper = document.querySelector(".snap-wrapper");
+const dots = document.querySelectorAll(".dot");
+
+/* 🔥 1. 스크롤 시 dot 변경 */
+wrapper.addEventListener("scroll", () => {
+  const scrollY = wrapper.scrollTop;
+  const pageHeight = wrapper.clientHeight;
+
+  let index = Math.round(scrollY / pageHeight);
+
+  dots.forEach(dot => dot.classList.remove("active"));
+  if (dots[index]) dots[index].classList.add("active");
+});
+
+/* 🔥 2. dot 클릭 시 이동 */
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    wrapper.scrollTo({
+      top: i * wrapper.clientHeight,
+      behavior: "smooth"
+    });
+  });
+});
+</script>
 </body>
 </html>

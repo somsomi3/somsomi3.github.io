@@ -1,0 +1,510 @@
+/* ========================= */
+/* maraeba 상세 페이지 (최종 디자인) */
+/* ========================= */
+
+:root {
+  --main-color: #f7ea7c;
+  --text-main: #222;
+  --text-sub: #666;
+  --bg-soft: #f7f8fc;
+  --font-title: clamp(28px, 2.2vw, 48px);
+  --font-section: clamp(18px, 1.4vw, 26px);
+  --font-body: clamp(14px, 1vw, 18px);
+  --font-small: clamp(12px, 0.8vw, 15px);
+}
+
+/* 전체 */
+.maraeba-container {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* 제목 */
+.maraeba-title {
+  font-size: var(--font-title);
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 1.3;
+  display: inline-block;  
+  padding-bottom: 6px;     /* 🔥 밑줄과 간격 */
+  border-bottom: 3px solid #1F5C3F;
+}
+
+/* 🔥 전체 3단 */
+.maraeba-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.2fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* ========================= */
+/* 왼쪽 정보 */
+/* ========================= */
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 아이템 */
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: clamp(13px, 0.9vw, 16px);
+}
+
+/* 아이콘 */
+.info-icon {
+  color: var(--main-color);
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+/* 텍스트 */
+/* 왼쪽 라벨 */
+.info-label {
+  width: 60px;
+  font-weight: 600;
+  color:  #1F5C3F;
+}
+
+/* 오른쪽 값 */
+.info-value {
+  flex: 1;
+  color: #222;
+}
+
+/* 기술 태그 */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tech-tag {
+  background: #abd8d0;
+  color: #1c1f22;
+  font-size: var(--font-small);
+  font-weight: 450;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+/* 버튼 */
+.link-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.link-btn {
+  font-size: var(--font-small);
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #f0f0f0;
+  text-decoration: none;
+  color: #333;
+}
+
+/* ========================= */
+/* 가운데 기능 */
+/* ========================= */
+
+.center-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-title {
+  font-size: var(--font-section);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* 기능 블록 */
+.feature-block {
+  font-size: var(--font-body);
+  color: var(--text-main);
+}
+
+/* 소제목 */
+.feature-block b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 리스트 */
+.feature-block ul {
+  padding-left: 15px;
+}
+
+.feature-block li {
+  font-size: var(--font-small);
+  color: var(--text-sub);
+  margin-bottom: 4px;
+}
+
+.feature-item {
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: var(--font-small);
+  font-weight: 600;
+  color: #222;
+}
+
+.feature-desc {
+  font-size: var(--font-small);
+  color: #666;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* ========================= */
+/* 오른쪽 이미지 */
+/* ========================= */
+
+.right-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-box img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.right-box video {
+  width: 100%;
+  height: auto;        /* 🔥 핵심 */
+  object-fit: contain; /* 🔥 변경 */
+  border-radius: 12px;
+}
+
+/* ========================= */
+/* 반응형 */
+/* ========================= */
+@media (max-width: 900px) {
+
+  /* 전체 1열로 */
+  .maraeba-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* 제목 */
+  .maraeba-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* 왼쪽 정보 */
+  .left-box {
+    gap: 12px;
+  }
+
+  .info-row {
+    font-size: 13px;
+  }
+
+  .info-label {
+    width: 55px;
+    font-size: 13px;
+  }
+
+  .info-value {
+    font-size: 13px;
+  }
+
+  /* 기술스택 */
+  .tech-tag {
+    font-size: 10px;
+    padding: 3px 7px;
+  }
+
+  /* 가운데 기능 */
+  .center-box {
+    gap: 12px;
+  }
+
+  .feature-title {
+    font-size: 12.5px;
+  }
+
+  .feature-desc {
+    font-size: 12px;
+  }
+
+  /* 🔥 이미지 (핵심 수정) */
+  .right-box {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .right-box img,
+  .right-box video {
+    width: 100%;     /* 🔥 48% 제거 */
+    height: 180px;   /* 🔥 높이 줄이기 */
+  }
+
+}
+
+/* ========================= */
+/* 2페이지 (2단 레이아웃) */
+/* ========================= */
+.sub-title {
+  display: inline-block;   /* 🔥 글자 길이만큼만 */
+  font-size: var(--font-section);
+  font-weight: 700;
+  color: #111;
+
+  padding-bottom: 6px;     /* 🔥 밑줄과 간격 */
+  border-bottom: 3px solid #1F5C3F;
+  margin-bottom: 20px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* 🔥 왼쪽 넓게 */
+  gap: 50px;
+  align-items: center;
+}
+
+/* 왼쪽 텍스트 */
+.two-column h2 {
+  font-size: var(--font-section);
+  margin-bottom: 10px;
+  color: #1F5C3F;
+}
+
+.two-column p {
+  font-size: var(--font-body);
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* 리스트 */
+.feature-list {
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.feature-list > li {
+  margin-bottom: 12px;
+}
+
+.feature-list ul {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.feature-list li {
+  font-size: var(--font-small);
+  color: #555;
+}
+
+/* 오른쪽 이미지 */
+.two-column img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+/* ========================= */
+/* page2 오른쪽 이미지 */
+/* ========================= */
+.right-box2 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-box2 img {
+  width:100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.right-box2 video {
+  width: 100%;
+  height: auto;        /* 🔥 핵심 */
+  object-fit: contain; /* 🔥 변경 */
+  border-radius: 12px;
+}
+
+
+/* ========================= */
+/* 2페이지 반응형 */
+/* ========================= */
+@media (max-width: 900px) {
+
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .two-column img {
+    height: auto;
+  }
+  /* 🔥 2단 → 1단 */
+  .two-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* 텍스트 */
+  .two-column h2 {
+    font-size: 16px;
+  }
+
+  .two-column p {
+    font-size: 13px;
+  }
+
+  .feature-list li {
+    font-size: 12.5px;
+  }
+
+  /* 🔥 이미지 (1페이지 스타일 맞춤) */
+  .two-column .right-box2 {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .two-column .right-box2 img,
+   .two-column .right-box2 video{
+    width: 100%;
+    height: 180px; /* 🔥 1페이지랑 통일 */
+
+  }
+    .sub-title {
+    font-size: 18px;
+  }
+
+  .sub-number {
+    font-size: 15px;
+  }
+
+}
+
+/* ========================= */
+/* 3페이지 */
+/* ========================= */
+
+.two-column2 img {
+  width: 100%;
+}
+
+.two-column2 {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr; /* 🔥 왼쪽 넓게 */
+  gap: 50px;
+  align-items: center;
+}
+
+/* 왼쪽 텍스트 */
+.two-column2 h2 {
+  font-size: var(--font-title);
+  margin-bottom: 20px;
+  color: #1F5C3F;
+}
+
+.two-column2 p {
+  font-size: var(--font-body);
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* 리스트 */
+.feature-list {
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.feature-list > li {
+  margin-bottom: 12px;
+}
+
+.feature-list ul {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.feature-list li {
+  font-size: var(--font-small);
+  color: #555;
+}
+
+/* ========================= */
+/* 3페이지 반응형 */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+  .two-column2 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .two-column2 img {
+    height: auto;
+  }
+  /* 🔥 2단 → 1단 */
+  .two-column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* 텍스트 */
+  .two-column2 h2 {
+    font-size: 16px;
+  }
+
+  .two-column2 p {
+    font-size: 13px;
+  }
+
+  .feature-list2 li {
+    font-size: 12.5px;
+  }
+
+  /* 🔥 이미지 (1페이지 스타일 맞춤) */
+  .two-column2 .right-box2 {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .two-column2 .right-box2 img,
+   .two-column2 .right-box2 video{
+    width: 100%;
+    height: 180px; /* 🔥 1페이지랑 통일 */
+
+  }
+    .sub-title {
+    font-size: 18px;
+  }
+
+  .sub-number {
+    font-size: 15px;
+  }
+
+}
+
