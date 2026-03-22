@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>웰던 프로젝트</title>
+  <title> 산업 데이터 시스템 프로젝트</title>
 
   <!-- 🔥 CSS 연결 (중요) -->
 <link rel="stylesheet" href="../css/project.css">
@@ -14,7 +14,7 @@
 <!-- 상단 네비 -->
 <nav class="navbar">
   <div class="navbar-title">
-    전민경의 실시간 데이터 시스템 포트폴리오
+    <a href="../../index.html#page1">전민경's 실시간 데이터 시스템</a>
   </div>
 
   <div class="navbar-menu">
@@ -25,64 +25,236 @@
   </div>
 </nav>
 <div class="snap-wrapper">
+
+
 <!-- 페이지 1 -->
 <section id="page1" class="snap-page">
   <div class="page-inner">
 
-    <div class="dataflow-container">
-      <h1 class="dataflow-title">산업 데이터 수집 및 실시간 처리 시스템 프로젝트</h1>
+    <div class="maraeba-container">
+      <h1 class="maraeba-title">
+        산업 데이터 수집 및 실시간 처리 시스템
+              <h3>SSAFY특화 프로젝트_자율주행 시뮬레이터 기반 재고관리 서비스 "웰던" 을 고도화한 프로젝트<br><br></h3>
+      </h1>
 
-      <div class="dataflow-content">
+      <!-- 핵심 변경 -->
+      <div class="maraeba-layout">
 
-        <div class="dataflow-left">
-          <div class="dataflow-grid">
-            <div>
-              <h3>프로젝트 개요</h3>
-              <p>다양한 형태의 데이터를 하나의 표준 메시지로 수집하고 안정적으로 저장하는 백엔드 시스템을 구현 시스템입니다.</p>
-            </div>
-            <div>
-              <h3>기술 스택</h3>
-              <p>Spring Boot, TCP/UDP, Websocket, Kafka, OPC-UA Reader, SQL 튜닝</p>
-            </div>
-          </div>
+        <!-- 왼쪽 -->
+        <div class="left-box">
+    <div class="info-block">
+    <span class="info-label">프로젝트개요</span>
+      <p>
+                공장/설비 환경에서 발생하는<br> 다양한 형태의 데이터를<br>
+                하나의 표준 메시지로 수집하고 안정적으로 저장
+              </p>
 
-          <div class="dataflow-grid">
-            <div>
-              <h3>내 역할</h3>
-              <p>백엔드 개발 및 실시간 통신 구조 설계</p>
-            </div>
-            <div>
-              <h3>성과</h3>
-              <p>로봇 좌표 실시간 시각화 및 제어 구현</p>
-            </div>
-          </div>
+    </div>
+
+  <div class="info-row">
+    <span class="info-label">기간</span>
+    <span class="info-value">2025.12.21 ~ 2025.01.21(5주) </span>
+  </div>
+
+  <div class="info-row">
+    <span class="info-label">인원</span>
+    <span class="info-value">1인(개인프로젝트)</span>
+  </div>
+
+  <div class="info-row">
+    <span class="info-label">역할</span>
+    <span class="info-value">Backend(TCP/UDP/WEBSOCKET/OPC-UA, Kafka, SQL튜닝)</span>
+  </div>
+
+  <div class="info-row">
+    <span class="info-label">기여도</span>
+    <span class="info-value">100%</span>
+  </div>
+
+          <div class="info-block">
+              <span class="info-label">기술스택</span>
+                 <div class="tech-stack">
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">TCP / UDP / WebSocket / OPC-UA (Eclipse Milo)</span>
+                  <span class="tech-tag">Docker Compose</span>
+                </div>
+
+              </div>
+
+
+          <p>
+            <span class="info-label">GitHub</span>
+            <a href="https://github.com/somsomi3/communication" target="_blank">
+              산업 데이터 시스템 프로젝트
+            </a>
+          </p>
+
         </div>
 
-        <div class="dataflow-right">
-          <img src="../images/dataflow.png" alt="웰던 이미지">
+        <!-- 가운데 -->
+        <div class="center-box">
+
+
+              <div class="info-block">
+                <span class="info-label">구현 기능</span>
+                <div class="feature-block">
+
+                  <div class="feature-item">
+                    <div class="feature-title">다양한 산업 프로토콜 통합</div>
+                    <div class="feature-desc">
+                      다양한 프로토콜(TCP / UDP / WebSocket / OPC-UA)을 통해 수집된 데이터를<br>
+                      SensorMessage DTO로 표준화
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-title">Kafka 기반 스트림 처리</div>
+                    <div class="feature-desc">
+                      Kafka Producer를 통해 Topic에 메시지 발행<br>
+                      Kafka Consumer가 메시지 수신
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <div class="feature-title">SQL 성능 튜닝</div>
+                    <div class="feature-desc">
+                      EXPLAIN ANALYZE 기반, 인덱스 유무 성능 비교 실습
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="info-block">
+                <span class="info-label">프로젝트 성과</span><br>
+                <span class="info-value">다양한 형태의 데이터를<br>
+                   하나의 표준 메시지로 수집, 저장, 최적화</span>
+              
+              </div>
+            </div>
+
+        <!-- 오른쪽 -->
+        <!-- 오른쪽 -->
+        <div class="right-box">
+          <h3 class="arch-title">시스템 아키텍처</h3>
+          <img src="../images/fix산업시스템1page.png">
         </div>
 
       </div>
+
     </div>
 
   </div>
 </section>
 
-<section id="page2" class="snap-page"><div class="page-inner">PAGE 2</div></section>
-<section id="page3" class="snap-page"><div class="page-inner">PAGE 3</div></section>
-<section id="page4" class="snap-page"><div class="page-inner">PAGE 4</div></section>
+
+
+<section id="page2" class="snap-page">
+  <div class="page-inner">
+
+    <h2 class="sub-title">담당 구현 상세</h2>
+    <div class="two-column">
+
+      <!-- 왼쪽 -->
+      <div>
+        <h2>주요 기능</h2>
+        <ul class="feature-list">
+        <p>1. 다양한 산업 프로토콜 통합 (TCP / UDP / WebSocket / OPC-UA)<br>
+            2. Kafka를 통한 비동기 메시징 처리<br>
+            3. 로그성 데이터 저장을 고려한 DB사용<br>
+            4. EXPLAIN ANALYZE 기반 SQL 성능 튜닝 실습        
+        <p>
+        </ul>
+
+        <h2>데이터 흐름 설명</h2>
+                <ul class="feature-list">
+        <p>
+            1. 다양한 프로토콜을 통해 수집된 데이터를 SensorMessage DTO로 표준화<br>
+            2. Kafka Producer를 통해 Topic에 메시지 발행<br>
+            3. Kafka Consumer가 메시지 수신<br>
+            4. PostgreSQL에 로그성 데이터 저장<br>
+            5. Redis에 센서 최신값 저장 (실시간 조회용 캐시)<br>
+            6. EXPLAIN ANALYZE 기반 인덱스 유무 성능 비교 실습<br>
+        </p>
+      </ul>
+        <h2>SQL튜닝을 통한 성능 최적화</h2>
+        <p>
+          - 20,000건 샘플 데이터 Insert<br>
+          - created_at 인덱스 전/후 비교<br>
+          - Seq Scan → Index Scan 전환 및 조회 성능 개선
+        </p>
+      </div>
+
+      <!-- 오른쪽 -->
+      <div class="right-box2">
+
+        <!-- ===================== -->
+        <!-- SensorMessage 구조 -->
+        <!-- ===================== -->
+        <div class="section-block">
+
+          <div class="section-title">
+            SensorMessageDTO로 통합된 데이터 구조
+          </div>
+
+          <div class="code-box">
+        <pre><code>{
+          "protocol": "HTTP",
+          "sourceId": "test-controller",
+          "type": "log",
+          "timestamp": 1767799956344,
+          "payload": {
+            "msg": "sensor test message"
+          }
+        }</code></pre>
+          </div>
+
+        </div>
+
+
+        <!-- ===================== -->
+        <!-- SQL 튜닝 전 -->
+        <!-- ===================== -->
+        <div class="section-block">
+
+          <div class="section-title">
+            인덱스 적용 전 (Execution Time: 1.876 ms)
+          </div>
+
+          <img class="result-img" src="../images/산업시스템2page_1.png" alt="Before Index - Seq Scan">
+
+        </div>
+
+
+        <!-- ===================== -->
+        <!-- SQL 튜닝 후 -->
+        <!-- ===================== -->
+        <div class="section-block">
+
+          <div class="section-title">
+            인덱스 적용 후 (Execution Time: 0.062 ms)
+          </div>
+
+          <img class="result-img" src="../images/산업시스템2page_2.png" alt="After Index - Index Scan">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </div>
 <div class="dots">
   <span class="dot active"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
   <span class="dot"></span>
 </div>
 <script>
 const wrapper = document.querySelector(".snap-wrapper");
 const dots = document.querySelectorAll(".dot");
 
-/* 1. 스크롤 시 dot 변경 */
+/* 🔥 1. 스크롤 시 dot 변경 */
 wrapper.addEventListener("scroll", () => {
   const scrollY = wrapper.scrollTop;
   const pageHeight = wrapper.clientHeight;
@@ -93,7 +265,7 @@ wrapper.addEventListener("scroll", () => {
   if (dots[index]) dots[index].classList.add("active");
 });
 
-/* 2. dot 클릭 시 이동 */
+/* 🔥 2. dot 클릭 시 이동 */
 dots.forEach((dot, i) => {
   dot.addEventListener("click", () => {
     wrapper.scrollTo({

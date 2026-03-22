@@ -4,7 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit; /* 부모 색 따라감 */
+}
 /* body는 스크롤 막기 */
 body {
   overflow: hidden;
@@ -76,7 +86,7 @@ body {
   width: 100%;
   max-width: none;
   padding: 40px;
-  
+  /* height: 100%; */
 }
 /* dot 전체 */
 .dots {

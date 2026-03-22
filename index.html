@@ -11,15 +11,15 @@
 <nav class="navbar">
   <!-- 왼쪽 -->
   <div class="navbar-title">
-    전민경의 실시간 데이터 시스템 포트폴리오
+    <a href="#page1">전민경's 실시간 데이터 시스템</a>
   </div>
 
   <!-- 오른쪽 -->
   <div class="navbar-menu">
-    <a href="#page1">소개</a>
-    <a href="#page2">프로필</a>
-    <a href="#page3">기술</a>
-    <a href="#page4">프로젝트</a>
+    <a href="#page1" class="nav-link active">ABOUT</a>
+    <a href="#page2" class="nav-link">PROFILE</a>
+    <a href="#page3" class="nav-link">SKILLS</a>
+    <a href="#page4" class="nav-link">PROJECTS</a>
   </div>
 </nav>
 
@@ -58,7 +58,7 @@
     </div>
 
     <div class="detail-view">
-    <!-- 내용 (🔥 구조 변경됨) -->
+    <!-- 내용 (구조 변경됨) -->
         <div class="detail-content">
 
         <div class="block">
@@ -69,23 +69,28 @@
 
         <div class="block">
             <h3>LANGUAGE SKILL</h3>
-            <p>TOEIC SPEAKING TEST(IH)</p>
+            <p><b>2026.01.18.</b>TOEIC SPEAKING TEST(IH)</p>
         </div>
 
         <div class="block">
             <h3>CAREER/EDUCATION</h3>
-            <p>(2024.7.2. ~ 2024.6.30.)</p>
+            <p><b>2024.7.2. ~ 2024.6.30.</b><br>삼성 청년 SW·AI 아카데미 12기 수료</p>
+            <p><b>2022.11.7. ~ 2023.12.1.</b><br>공무원 (산림 행정 및 휴양림 관련 업무)</p>
+            <p><b>2014.3. ~ 2018.8.</b><br>경상대학교 산림환경자원학과 졸업, 학점 (4.28 / 4.5)</p>
         </div>
 
         <div class="block">
             <h3>AWARDS / CERTIFICATES</h3>
             <p><b>2025.9.19.</b> SQL 개발자(SQLD)</p>
-            <p><b>2025.2.21.</b> 우수상</p>
+            <p><b>2025.2.21.</b> 우수상<br>
+            (부울경1반 1등, 공통프로젝트 6팀 중 1위)
+            (삼성전자 주식회사)
+            </p>
         </div>
 
         </div>
     </div>
-    <!-- 🔥 dots -->
+    <!-- dots -->
     <div class="dots detail-dots">
       <span class="dot active" onclick="goDetailSlide(0)"></span>
       <span class="dot" onclick="goDetailSlide(1)"></span>
@@ -117,7 +122,7 @@ function goDetailSlide(index) {
     <!-- 헤더 -->
     <div class="skill-header">
       <h1>SKILLS</h1>
-      <p>Language, Backend, Tools & Infra</p>
+      <p>Language, Tools & Infra, Backend</p>
     </div>
 
     <!-- 본문 -->
@@ -210,7 +215,7 @@ function goSkillSlide(index) {
  
     <!-- 헤더 -->
     <div class="project-header">
-      <h1>PROJECT</h1>
+      <h1>PROJECTS</h1>
       <p>주요 프로젝트 경험</p>
     </div>
 
@@ -220,8 +225,8 @@ function goSkillSlide(index) {
 
 
         <a href="projects/welldone.html" class="project-card">
-            <div class="card-image"
-                style="background-image: url('images/welldone.png');">
+            <div class="card-image">
+              <img src="images/웰던메인.png">
             </div>
 
             <div class="card-content">
@@ -230,10 +235,20 @@ function goSkillSlide(index) {
             </div>
         </a>
 
+        <a href="projects/dataflow.html" class="project-card">
+            <div class="card-image">
+              <img src="images/산업시스템메인.png">
+            </div>
+
+            <div class="card-content">
+              <h3>산업 데이터 처리</h3>
+              <p>통신 기술 및 Kafka기반 실시간 데이터 서비스</p>
+            </div>
+        </a>
 
         <a href="projects/daldidan.html" class="project-card">
-            <div class="card-image"
-                style="background-image: url('images/welldone.png');">
+            <div class="card-image">
+              <img src="images/달디단메인.png">
             </div>
 
             <div class="card-content">
@@ -243,31 +258,33 @@ function goSkillSlide(index) {
         </a>
 
         <a href="projects/maraeba.html" class="project-card">
-            <div class="card-image"
-                style="background-image: url('images/welldone.png');">
+            <div class="card-image">
+              <img src="images/마래바메인.png">
             </div>
 
             <div class="card-content">
-              <h3>마래바</h3>
-              <p>음성AI와 WebRTC기반 청각장애 아동 언어 지도 서비스</p>
+              <h3 class="project-title">마래바</h3>
+
+              <p class="project-desc">
+                음성AI와 WebRTC 기반 청각장애아동 언어지도 서비스
+              </p>
+
+              <p class="project-meta">
+                <span class="label">기간</span>: 6주 (6인)
+              </p>
+
+              <p class="project-meta">
+                <span class="label">역할</span>: Backend (WebSocket, WebRTC)
+              </p>
             </div>
         </a>
 
-        <a href="projects/dataflow.html" class="project-card">
-            <div class="card-image"
-                style="background-image: url('images/welldone.png');">
-            </div>
 
-            <div class="card-content">
-              <h3>산업 데이터 처리</h3>
-              <p>통신 기술 및 Kafka기반 실시간 데이터 서비스</p>
-            </div>
-        </a>
 
       </div>
     </div>
 
-        <!-- 🔥 점 추가 -->
+        <!-- 점 추가 -->
         <div class="dots">
         <span class="dot active" onclick="goSlide(0)"></span>
         <span class="dot" onclick="goSlide(1)"></span>
@@ -283,13 +300,35 @@ function goSlide(index) {
   const view = document.querySelector('.project-view');
   const dots = document.querySelectorAll('.project-container .dot');
 
-  const viewWidth = view.clientWidth; // 🔥 핵심 수정
+  const viewWidth = view.clientWidth;
 
   grid.style.transform = `translateX(-${index * viewWidth}px)`;
 
   dots.forEach(dot => dot.classList.remove('active'));
   dots[index].classList.add('active');
 }
+</script>
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
 </script>
 </body>
 </html>

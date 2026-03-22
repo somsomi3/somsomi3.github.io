@@ -18,7 +18,7 @@
   width: 100%;
   max-width: none;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 /* 제목 */
@@ -35,9 +35,10 @@
 /* 🔥 전체 3단 */
 .maraeba-layout {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1.2fr;
+  grid-template-columns: 1fr 1.2fr 1fr;
   gap: 50px;
   align-items: start;
+  
 }
 
 /* ========================= */
@@ -156,13 +157,13 @@
 }
 
 .feature-title {
-  font-size: var(--font-small);
+  font-size: var(--font-body);
   font-weight: 600;
   color: #222;
 }
 
 .feature-desc {
-  font-size: var(--font-small);
+  font-size: var(--font-body);
   color: #666;
   margin-top: 3px;
   line-height: 1.4;
@@ -186,7 +187,7 @@
 }
 
 .right-box video {
-  width: 100%;
+  width: 80%;
   height: auto;        /* 🔥 핵심 */
   object-fit: contain; /* 🔥 변경 */
   border-radius: 12px;
