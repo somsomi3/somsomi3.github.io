@@ -430,7 +430,7 @@ font-size: var(--font-body);
 
 /* 왼쪽 텍스트 */
 .two-column2 h2 {
-  font-size: var(--font-title);
+font-size: var(--font-section);
   margin-bottom: 10px;
   color: #1F5C3F;
 }
