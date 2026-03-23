@@ -29,7 +29,7 @@ body {
   background: white;
 
   display: flex;
-  justify-content: space-between; /* 🔥 핵심 */
+  justify-content: space-between; /* 핵심 */
   align-items: center;
 
   padding: 0 40px; /* 양쪽 여백 */
@@ -49,7 +49,7 @@ body {
   gap: 30px;
 }
 
-/* 🔥 핵심: 스크롤 영역 */
+/* 핵심: 스크롤 영역 */
 .snap-wrapper {
   position: absolute;
   top: 80px; /* navbar 아래 시작 */
@@ -99,7 +99,7 @@ body {
   flex-direction: column;
   gap: 12px;
 
-  z-index: 2000; /* 🔥 중요 */
+  z-index: 2000; 
 }
 
 /* 기본 dot */
@@ -128,7 +128,7 @@ body {
   }
 
   .snap-page {
-    height: auto;           /* 🔥 핵심 */
+    height: auto;
     min-height: calc(100vh - 80px);
   }
 }
@@ -179,4 +179,20 @@ body {
 .navbar-menu a {
   font-size: 17px;  
   font-weight: 600;  
+}
+
+/* 기본: 긴 제목 보이기 */
+.title-short {
+  display: none;
+}
+
+/* 화면 작아지면 */
+@media (max-width: 600px) {
+  .title-full {
+    display: none;
+  }
+
+  .title-short {
+    display: inline;
+  }
 }

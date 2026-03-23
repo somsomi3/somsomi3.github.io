@@ -566,3 +566,19 @@
   border-radius: 8px;
   margin-top: 0px;
 }
+
+/* 기본: 긴 제목 보이기 */
+.title-short {
+  display: none;
+}
+
+/* 화면 작아지면 */
+@media (max-width: 600px) {
+  .title-full {
+    display: none;
+  }
+
+  .title-short {
+    display: inline;
+  }
+}

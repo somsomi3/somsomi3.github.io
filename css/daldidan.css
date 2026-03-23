@@ -249,7 +249,7 @@ font-size: var(--font-body);
     font-size: 12px;
   }
 
-  /* 🔥 이미지 (핵심 수정) */
+  /* 이미지 (핵심 수정) */
   .right-box {
     width: 100%;
     gap: 16px;
@@ -257,8 +257,8 @@ font-size: var(--font-body);
 
   .right-box img,
   .right-box video {
-    width: 100%;     /* 🔥 48% 제거 */
-    height: 180px;   /* 🔥 높이 줄이기 */
+    width: 100%;     /* 48% 제거 */
+    height: 180px;   /* 높이 줄이기 */
   }
 
 }
@@ -267,19 +267,19 @@ font-size: var(--font-body);
 /* 2페이지 (2단 레이아웃) */
 /* ========================= */
 .sub-title {
-  display: inline-block;   /* 🔥 글자 길이만큼만 */
+  display: inline-block;   /* 글자 길이만큼만 */
   font-size: var(--font-section);
   font-weight: 700;
   color: #111;
 
-  padding-bottom: 6px;     /* 🔥 밑줄과 간격 */
+  padding-bottom: 6px;     /* 밑줄과 간격 */
   border-bottom: 3px solid #1F5C3F;
   margin-bottom: 20px;
 }
 
 .two-column {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 🔥 왼쪽 넓게 */
+  grid-template-columns: 1fr 1fr; /* 왼쪽 넓게 */
   gap: 50px;
   align-items: center;
 }
@@ -365,7 +365,7 @@ font-size: var(--font-body);
   .two-column img {
     height: auto;
   }
-  /* 🔥 2단 → 1단 */
+  /* 2단 → 1단 */
   .two-column {
     display: flex;
     flex-direction: column;
@@ -385,7 +385,7 @@ font-size: var(--font-body);
     font-size: 12.5px;
   }
 
-  /* 🔥 이미지 (1페이지 스타일 맞춤) */
+  /* 이미지 (1페이지 스타일 맞춤) */
   .two-column .right-box2 {
     width: 100%;
     gap: 16px;
@@ -394,7 +394,7 @@ font-size: var(--font-body);
   .two-column .right-box2 img,
    .two-column .right-box2 video{
     width: 80%;
-    height: 180px; /* 🔥 1페이지랑 통일 */
+    height: 180px; /* 1페이지랑 통일 */
 
   }
     .sub-title {
@@ -417,7 +417,7 @@ font-size: var(--font-body);
 
 .two-column2 {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 🔥 왼쪽 넓게 */
+  grid-template-columns: 1fr 1fr; /* 왼쪽 넓게 */
   gap: 50px;
   align-items: center;
 }
@@ -470,7 +470,7 @@ font-size: var(--font-body);
   .two-column2 img {
     height: auto;
   }
-  /* 🔥 2단 → 1단 */
+  /* 2단 → 1단 */
   .two-column2 {
     display: flex;
     flex-direction: column;
@@ -490,7 +490,7 @@ font-size: var(--font-body);
     font-size: 12.5px;
   }
 
-  /* 🔥 이미지 (1페이지 스타일 맞춤) */
+  /* 이미지 (1페이지 스타일 맞춤) */
   .two-column2 .right-box2 {
     width: 100%;
     gap: 16px;
@@ -499,7 +499,7 @@ font-size: var(--font-body);
   .two-column2 .right-box2 img,
    .two-column2 .right-box2 video{
     width: 100%;
-    height: 180px; /* 🔥 1페이지랑 통일 */
+    height: 180px; /* 1페이지랑 통일 */
 
   }
     .sub-title {
@@ -510,4 +510,20 @@ font-size: var(--font-body);
     font-size: 15px;
   }
 
+}
+
+/* 기본: 긴 제목 보이기 */
+.title-short {
+  display: none;
+}
+
+/* 화면 작아지면 */
+@media (max-width: 600px) {
+  .title-full {
+    display: none;
+  }
+
+  .title-short {
+    display: inline;
+  }
 }
