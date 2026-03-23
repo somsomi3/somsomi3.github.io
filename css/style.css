@@ -644,8 +644,9 @@ body {
 
 
 .skill-card {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
   justify-content: center;
   gap: 12px 20px;
 }
@@ -673,4 +674,39 @@ body {
 .skill-item img {
   width: 24px !important;
   height: 24px !important;
+}
+.skill-item {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.skill-item b {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.skill-card {
+  width: 100%;        /* 이거 필수 */
+  box-sizing: border-box;
+}
+.skill-item {
+  display: flex;
+  
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  white-space: nowrap;
+  min-width: 170px;
+  font-weight: 700;
+  color: #0D47A1;   /* 포인트 색 */
+
+}
+
+.skill-desc {
+  color: #444;
 }
